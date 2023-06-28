@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+
+  db:
+    ports:
+      - '5432:5432'
+    build: postgres_db/
+
+  telegram_bot:
+    network_mode: host
+    build: python_logic/
+
+    depends_on:
+      - db

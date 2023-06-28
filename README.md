@@ -3,6 +3,7 @@
 В папке проекта:
 
 `docker-compose build`
+
 `docker-compose up`
 
 ### Screencast
